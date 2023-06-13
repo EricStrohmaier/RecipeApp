@@ -4,7 +4,7 @@ export default function Card({ recipe }) {
     <a href={recipe.link} rel="noreferrer" title="Click me" target="_blank" className="flex flex-row justify-center items-center">
       <p className="mr-4">{recipe.title}</p>
       <div className="w-24 h-24 overflow-hidden rounded-lg">
-        <img  src={recipe.imageSrc}  alt="Recipe Picture" />
+        <img src={recipe.src}  alt="Recipe" />
       </div>
 
     </a>
