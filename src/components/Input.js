@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Input({ setCategories }) {
     const [selectedCategories, setSelectedCategories] = useState([]);
-    const [searchInput, setSearchInput] = useState("");
+    // const [searchInput, setSearchInput] = useState("");
 
   
     const handleCheckboxChange = (event) => {
@@ -21,7 +21,7 @@ export default function Input({ setCategories }) {
     const handleSubmit = (event) => {
       event.preventDefault();
       // Pass the selectedCategories to the parent component
-      setCategories( selectedCategories, searchInput );
+      setCategories( selectedCategories );
     };
     // const handleSearchInput = (event) => {
     //     const { value } = event.target;
