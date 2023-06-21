@@ -24,6 +24,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://ui-ux-recipe-app.vercel.app/",
   "browserslist": {
     "production": [
       ">0.2%",
