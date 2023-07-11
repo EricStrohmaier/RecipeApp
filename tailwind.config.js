@@ -35,11 +35,11 @@ theme: {
     extend: {
       colors: {
         // türkies 4d938e
-        primary: '#29658a',
+        primary: '#F5F5DC',
         secondary: '#f8fafb',
         accent: '#4d7593',
         color: '#0e1b14',
-        background: '#e8f3ec',
+        background: '#F5F5DC',
       },
       animation: {
         vote: 'vote 1s ease-in-out',

@@ -81,34 +81,8 @@ export default function Cards({ selectedCategories }) {
 
 
 
-  // useEffect(() => {
-  //   async function searchRecipes() {
-  //          if(searchInput){
-  //           console.log(searchInput);
-  //     try {
-  //         const { data, error } = await supabase
-  //           .from("recipes")
-  //           .select()
-  //           .ilike("title", "%" + searchInput + "%");
-
-  //         if (error) {
-  //           throw new Error(error.message);
-  //         }
-
-
-  //         setRecipes(data);
-  //         setIsLoading(false);
-  //       } catch (error) {
-  //         console.error("Error searching for recipes:", error);
-  //       }
-  //     }
-  //   }
-
-  //   searchRecipes();
-  // }, [searchInput]);
-
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center text-3xl font-bold">Loading...</div>;
   }
 
   return (
