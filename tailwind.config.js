@@ -39,7 +39,7 @@ theme: {
         secondary: '#f8fafb',
         accent: '#4d7593',
         color: '#0e1b14',
-        background: '#F5F5DC',
+        background: '#F9E0C5',
       },
       animation: {
         vote: 'vote 1s ease-in-out',

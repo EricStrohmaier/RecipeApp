@@ -6,7 +6,7 @@ export default function HomePage() {
   const [categories, setCategories] = useState([]);
   // s
   return (
-    <div className=" bg-background">
+    <div className="h-full  bg-background">
     <div className=" relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
       <h1 className="mx-4 text-slate-900 font-extrabold text-4xl sm:text-3xl lg:text-6xl tracking-tight text-center">
         Find the perfect recipe for today
@@ -20,7 +20,13 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-4 md:px-8 mt-4 sm:mt-3 lg:mt-3 items-center">
         <Cards selectedCategories={categories} />
       </div>
-    </div>
+
+      <footer className="flex justify-center items-center pb-5  text-lg  text-slate-600 text-center">
+      <a className="hover:text-slate-900 " rel="noreferrer" target="_blank" href="https://github.com/EricStrohmaier/">
+       made by Eric Strohmaier
+      </a>
+      </footer>
+    </div> 
   </div>
   );
 }

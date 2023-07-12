@@ -2,8 +2,6 @@ import React,{ useState } from "react";
 
 export default function Input({ setCategories }) {
     const [selectedCategories, setSelectedCategories] = useState([]);
-    // const [searchInput, setSearchInput] = useState("");
-
   
     const handleCheckboxChange = (event) => {
       const { value, checked } = event.target;
@@ -11,24 +9,24 @@ export default function Input({ setCategories }) {
       if (checked) {
         setSelectedCategories((prevCategories) => [...prevCategories, value]);
       } else {
-
-        // setSelectedCategories((prevCategories) =>
-        //   prevCategories.filter((category) => category !== value)
-        // );
+        setSelectedCategories((prevCategories) =>
+          prevCategories.filter((category) => category !== value)
+        );
       }
     };
   
     const handleSubmit = (event) => {
       event.preventDefault();
       // Pass the selectedCategories to the parent component
-      setCategories( selectedCategories );
+      setCategories(selectedCategories);
+  
+      // Clear the selectedCategories state
+      setSelectedCategories([]);
+  
+      // Uncheck the checkboxes
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach((checkbox) => (checkbox.checked = false));
     };
-    // const handleSearchInput = (event) => {
-    //     const { value } = event.target;
-    //     setSearchInput(value);
-    //     setCategories( selectedCategories, value );
-      
-    //   };
       
       
   

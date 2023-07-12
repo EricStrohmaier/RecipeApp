@@ -82,16 +82,17 @@ export default function Cards({ selectedCategories }) {
 
 
   if (isLoading) {
-    return <div className="flex justify-center items-center text-3xl font-bold">Loading...</div>;
+    return <div className="flex h-[500px] justify-center items-center text-3xl font-bold">Loading...</div>;
   }
 
   return (
     <div className=" px-5 py-2">
-      <div className="font-semibold lg:text-4xl sm:text-2xl text-gray-800">
+      <div className="  font-semibold lg:text-4xl sm:text-2xl text-gray-800">
         {recipes.map((recipe) => (
           <Card key={recipe.id} recipe={recipe} />
         ))}
       </div>
+
     </div>
   );
 }
