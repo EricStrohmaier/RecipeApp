@@ -12,7 +12,7 @@ export default function Card({ recipe }) {
         rel="noopener noreferrer"
         title="Click me"
         target="_blank"
-        className={`flex flex-row justify-center items-center `}
+        className={`flex flex-row justify-between  items-center px-5`}
       >
         <p className="mr-4 ">{recipe.title}</p>
         <div

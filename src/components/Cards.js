@@ -87,7 +87,7 @@ export default function Cards({ selectedCategories }) {
 
   return (
     <div className=" px-5 py-2">
-      <div className="  font-semibold lg:text-4xl sm:text-2xl text-gray-800">
+      <div className="  font-semibold lg:text-3xl sm:text-2xl text-gray-800">
         {recipes.map((recipe) => (
           <Card key={recipe.id} recipe={recipe} />
         ))}
